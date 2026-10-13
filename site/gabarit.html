@@ -20,12 +20,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="/vialet/fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/vialet/vialet.css?v={{css_v}}">
-  <link rel="stylesheet" href="/hub.css?v={{extra_css_v}}">
+  <link rel="stylesheet" href="/hub.css?v={{hub_css_v}}">
 </head>
 <body data-hub style="--plaque-hub:{{plaque_hub}}">
 <header class="hub-tete">
   <a class="marque" href="/"><span class="plaque plaque-hub" aria-hidden="true"></span><span>vialet.app</span></a>
-  <a class="hub-github" href="https://github.com/avialet" rel="noopener">GitHub</a>
+  <nav class="hub-liens" aria-label="Ailleurs">
+    <a href="https://github.com/avialet" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" rel="noopener">LinkedIn</a>
+  </nav>
 </header>
 
 <main class="hub">
@@ -49,10 +52,15 @@
   </ul>
 
   <section class="hub-pourquoi" aria-labelledby="pourquoi">
-    <h2 id="pourquoi">Pourquoi ces apps</h2>
+    <div class="hub-pourquoi-tete">
+      <h2 id="pourquoi">Pourquoi ces apps</h2>
+      <p class="hub-signature">Aurélien Vialet<br><a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" rel="noopener">LinkedIn</a> · <a href="https://github.com/avialet" rel="noopener">GitHub</a></p>
+    </div>
+    <div class="hub-pourquoi-texte">
     <p>Je les ai d’abord écrites pour moi, il y a un moment déjà, pour simplifier un peu mon quotidien, sans chercher à les faire beaucoup évoluer.</p>
     <p>Il existe sûrement d’excellents outils, parfois gratuits, qui font la même chose. J’aimais l’idée de m’en passer : des apps qui partagent une même charte et que je retrouve toutes au même endroit. C’était aussi un terrain pour apprendre à développer des applications avec l’aide de l’IA.</p>
     <p>Je les publie sur GitHub sous licence MIT parce qu’elles peuvent servir à d’autres. Servez-vous-en, modifiez-les, redistribuez-les : vous en faites ce que vous voulez. L’idée est simplement de partager ce que j’ai testé.</p>
+    </div>
   </section>
 </main>
 
@@ -60,6 +68,7 @@
   <p class="pied-texte">Chaque app vit sur son propre site, avec son code et ses versions sur GitHub. Les sites ne posent aucun cookie et ne mesurent rien.</p>
   <ul>
     <li><a href="https://github.com/avialet" rel="noopener">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" rel="noopener">LinkedIn</a></li>
   </ul>
   <p>© {{annee}} Aurélien Vialet, licence MIT.</p>
 </footer>

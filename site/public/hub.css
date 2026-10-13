@@ -7,8 +7,9 @@
   min-height: var(--nav); max-width: var(--col); margin: 0 auto; padding: 0 var(--gutter);
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
-.hub-github { font-weight: 600; font-size: 15.5px; text-decoration: none; color: var(--ink-soft); }
-.hub-github:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .25em; }
+.hub-liens { display: flex; gap: 22px; }
+.hub-liens a { font-weight: 600; font-size: 15.5px; text-decoration: none; color: var(--ink-soft); }
+.hub-liens a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .25em; }
 .plaque-hub {
   background: var(--plaque-hub); /* un secteur par app, pose par le rendu depuis apps.json */
   width: 28px; height: 28px;
@@ -37,9 +38,17 @@ a.bloc:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3p
 .blocs > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .blocs > li:last-child:nth-child(odd) .bloc { min-height: 0; }
 
-.hub-pourquoi { max-width: 62ch; margin: 88px 0 0; }
-.hub-pourquoi h2 { font-size: clamp(26px, 3vw, 36px); margin-bottom: 20px; }
-.hub-pourquoi p { color: var(--ink-soft); font-size: clamp(16.5px, 1.4vw, 18px); line-height: 1.6; margin: 0 0 14px; }
+/* Pourquoi ces apps : titre et signature a gauche, texte a droite, sous un filet. */
+.hub-pourquoi {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.75fr); gap: 32px 56px;
+  margin: 96px 0 0; padding-top: 40px; border-top: 1px solid var(--line);
+}
+.hub-pourquoi h2 { font-size: clamp(28px, 3vw, 38px); max-width: 9ch; }
+.hub-signature { margin: 20px 0 0; font-size: 15.5px; line-height: 1.6; color: var(--ink-soft); }
+.hub-signature a { color: var(--ink); font-weight: 600; text-underline-offset: .25em; }
+.hub-pourquoi-texte { max-width: 60ch; }
+.hub-pourquoi-texte p { color: var(--ink-soft); font-size: clamp(16.5px, 1.35vw, 18px); line-height: 1.65; margin: 0 0 16px; }
+.hub-pourquoi-texte p:first-child { color: var(--ink); font-size: clamp(18px, 1.6vw, 21px); line-height: 1.5; }
 
 .pied { margin-top: 40px; }
 .pied-texte { grid-column: 1 / -1; color: var(--ink-soft); font-size: 15.5px; max-width: 60ch; margin: 0; }
@@ -49,5 +58,7 @@ a.bloc:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3p
   .blocs { grid-template-columns: 1fr; }
   .bloc { min-height: 0; }
   .bloc .plaque { width: 52px; height: 52px; }
-  .hub-pourquoi { margin-top: 56px; }
+  .hub-pourquoi { grid-template-columns: 1fr; gap: 20px; margin-top: 64px; padding-top: 32px; }
+  .hub-pourquoi h2 { max-width: none; }
+  .hub-signature { margin-top: 8px; }
 }
