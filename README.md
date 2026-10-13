@@ -10,7 +10,7 @@ sur la couche partagée `vialet/` (CSS, polices, JavaScript) commune à tous les
 - `docs/ajouter-une-app.md` : ajouter une app
 - `docs/deploiement.md` : déploiement par `rsync`, bloc nginx de la racine et redirection d'`app.vialet.app`
 
-Rendu et vérification, depuis le dépôt [vialetapps](https://github.com/avialet/vialetapps) voisin de celui-ci :
+Rendu et vérification, depuis le dépôt privé vialetapps, voisin de celui-ci :
 
     scripts/sync-site.sh --hub
 
