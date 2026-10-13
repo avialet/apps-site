@@ -34,6 +34,10 @@ a.bloc:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3p
 .bloc-suite { align-self: end; font-family: var(--mono); font-size: 13px; opacity: .85; }
 .bloc--bientot { opacity: .55; }
 
+.hub-pourquoi { max-width: 62ch; margin: 88px 0 0; }
+.hub-pourquoi h2 { font-size: clamp(26px, 3vw, 36px); margin-bottom: 20px; }
+.hub-pourquoi p { color: var(--ink-soft); font-size: clamp(16.5px, 1.4vw, 18px); line-height: 1.6; margin: 0 0 14px; }
+
 .pied { margin-top: 40px; }
 .pied-texte { grid-column: 1 / -1; color: var(--ink-soft); font-size: 15.5px; max-width: 60ch; margin: 0; }
 
@@ -42,4 +46,5 @@ a.bloc:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3p
   .blocs { grid-template-columns: 1fr; }
   .bloc { min-height: 0; }
   .bloc .plaque { width: 52px; height: 52px; }
+  .hub-pourquoi { margin-top: 56px; }
 }
