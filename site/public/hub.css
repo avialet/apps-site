@@ -1,0 +1,45 @@
+/* hub.css : la page vialet.app, sur la couche partagee vialet.css. Fond papier neutre,
+   un bloc plein par app dans sa couleur (teintes posees en style inline par le rendu). */
+:root { --page: var(--paper); }
+@media (prefers-color-scheme: dark) { :root { --page: var(--paper); --ink: #EDE9E2; } }
+
+.hub-tete {
+  min-height: var(--nav); max-width: var(--col); margin: 0 auto; padding: 0 var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+}
+.hub-github { font-weight: 600; font-size: 15.5px; text-decoration: none; color: var(--ink-soft); }
+.hub-github:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .25em; }
+.plaque-hub {
+  background: conic-gradient(from 0deg at 50% 50%, var(--c-pico) 0 25%, var(--c-allege) 0 50%, var(--c-brouillon) 0 75%, var(--c-pince) 0);
+  width: 28px; height: 28px;
+}
+
+.hub { max-width: var(--col); margin: 0 auto; padding: 56px var(--gutter) 40px; }
+.hub h1 { max-width: 22ch; }
+.hub-intro { color: var(--ink-soft); font-size: clamp(17px, 1.6vw, 20px); line-height: 1.5; max-width: 52ch; margin: 24px 0 48px; }
+
+.blocs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.bloc {
+  display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto 1fr; column-gap: 18px; row-gap: 6px;
+  align-items: start; min-height: 232px; padding: 26px 28px 24px; border-radius: 20px; text-decoration: none;
+  background: var(--accent-bg); color: var(--accent-deep);
+  transition: transform .22s cubic-bezier(.16, 1, .3, 1), box-shadow .22s;
+}
+a.bloc:hover { transform: translateY(-3px); box-shadow: 0 28px 48px -30px color-mix(in srgb, var(--accent-deep) 70%, transparent); }
+a.bloc:active { transform: translateY(-1px); }
+a.bloc:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3px; }
+.bloc .plaque { width: 64px; height: 64px; grid-row: 1 / 4; }
+.bloc-nom { font-family: var(--display); font-optical-sizing: auto; font-weight: 800; font-size: clamp(30px, 3.4vw, 40px); letter-spacing: -.02em; line-height: 1; }
+.bloc-accroche { font-size: 17px; line-height: 1.45; max-width: 30ch; margin-top: 4px; }
+.bloc-suite { align-self: end; font-family: var(--mono); font-size: 13px; opacity: .85; }
+.bloc--bientot { opacity: .55; }
+
+.pied { margin-top: 40px; }
+.pied-texte { grid-column: 1 / -1; color: var(--ink-soft); font-size: 15.5px; max-width: 60ch; margin: 0; }
+
+@media (max-width: 767px) {
+  .hub { padding-top: 36px; }
+  .blocs { grid-template-columns: 1fr; }
+  .bloc { min-height: 0; }
+  .bloc .plaque { width: 52px; height: 52px; }
+}

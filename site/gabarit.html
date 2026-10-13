@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurélien Vialet, des apps pour Mac</title>
+  <meta name="description" content="Les apps Mac d'Aurélien Vialet : natives, gratuites, sous licence MIT, sans compte ni télémétrie. Pico, Allège, Pince, Brouillon.">
+  <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161B" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://vialet.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aurélien Vialet, des apps pour Mac">
+  <meta property="og:description" content="Des apps natives pour Mac, libres et gratuites.">
+  <meta property="og:url" content="https://vialet.app/">
+  <meta property="og:image" content="https://vialet.app/og.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/vialet/fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/vialet/vialet.css?v={{css_v}}">
+  <link rel="stylesheet" href="/hub.css?v={{extra_css_v}}">
+</head>
+<body data-hub style="{{#apps}}--c-{{lower}}:{{accent_bg}};{{/apps}}">
+<header class="hub-tete">
+  <a class="marque" href="/"><span class="plaque plaque-hub" aria-hidden="true"></span><span>vialet.app</span></a>
+  <a class="hub-github" href="https://github.com/avialet" rel="noopener">GitHub</a>
+</header>
+
+<main class="hub">
+  <h1>Aurélien Vialet.<br>Des apps pour Mac, libres et gratuites.</h1>
+  <p class="hub-intro">Je conçois de petites apps natives pour le quotidien et je les partage ici, code source ouvert sous licence MIT. Chaque app se télécharge librement et se lit sur GitHub.</p>
+
+  <ul class="blocs" aria-label="Les apps">
+    {{#apps}}
+    <li>
+      {{^soon}}<a class="bloc" href="{{url}}" style="--accent:{{accent}};--accent-bg:{{accent_bg}};--accent-deep:{{accent_deep}}">{{/soon}}
+      {{#soon}}<div class="bloc bloc--bientot" style="--accent:{{accent}};--accent-bg:{{accent_bg}};--accent-deep:{{accent_deep}}">{{/soon}}
+        <span class="plaque">{{{plaque_svg_inverse}}}</span>
+        <span class="bloc-nom">{{name}}</span>
+        <span class="bloc-accroche">{{tagline}}</span>
+        {{^soon}}<span class="bloc-suite">{{lower}}.vialet.app</span>{{/soon}}
+        {{#soon}}<span class="bloc-suite">Bientôt</span>{{/soon}}
+      {{^soon}}</a>{{/soon}}
+      {{#soon}}</div>{{/soon}}
+    </li>
+    {{/apps}}
+  </ul>
+</main>
+
+<footer class="pied">
+  <p class="pied-texte">Chaque app vit sur son propre site, avec son code et ses versions sur GitHub. Les sites ne posent aucun cookie et ne mesurent rien.</p>
+  <ul>
+    <li><a href="https://github.com/avialet" rel="noopener">GitHub</a></li>
+    <li><a href="https://github.com/avialet/vialetapps" rel="noopener">Le socle des apps</a></li>
+  </ul>
+  <p>© {{annee}} Aurélien Vialet, licence MIT.</p>
+</footer>
+</body>
+</html>

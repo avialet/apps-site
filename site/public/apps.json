@@ -1,42 +1,8 @@
-[
-  {
-    "name": "Pico",
-    "url": "https://pico.vialet.app",
-    "tagline": "Le gestionnaire de tâches qui comprend vos phrases.",
-    "category": "Productivité",
-    "icon": "/img/pico.png",
-    "platform": "macOS 26",
-    "status": "available",
-    "color": "#F0A020"
-  },
-  {
-    "name": "Allège",
-    "url": "https://allege.vialet.app",
-    "tagline": "Allège vos images sans les envoyer nulle part.",
-    "category": "Images",
-    "icon": "/img/allege.png",
-    "platform": "macOS 26",
-    "status": "available",
-    "color": "#2E9D6E"
-  },
-  {
-    "name": "Pince",
-    "url": "https://pince.vialet.app",
-    "tagline": "Gardez plusieurs copies sous la main.",
-    "category": "Productivité",
-    "icon": "/img/pince.png",
-    "platform": "macOS 26",
-    "status": "available",
-    "color": "#2F6FEB"
-  },
-  {
-    "name": "Brouillon",
-    "url": "https://brouillon.vialet.app",
-    "tagline": "Le bloc-notes qui comprend ce que vous y collez.",
-    "category": "Texte",
-    "icon": "/img/brouillon.png",
-    "platform": "macOS 26",
-    "status": "available",
-    "color": "#8B78E6"
-  }
-]
+{
+  "apps": [
+    { "name": "Pico", "brand": "Pico", "url": "https://pico.vialet.app", "tagline": "Le gestionnaire de tâches qui comprend vos phrases.", "status": "available" },
+    { "name": "Allège", "brand": "Allege", "url": "https://allege.vialet.app", "tagline": "Allège vos images sans les envoyer nulle part.", "status": "available" },
+    { "name": "Pince", "brand": "Pince", "url": "https://pince.vialet.app", "tagline": "Gardez plusieurs copies sous la main.", "status": "available" },
+    { "name": "Brouillon", "brand": "Brouillon", "url": "https://brouillon.vialet.app", "tagline": "Le bloc-notes qui comprend ce que vous y collez.", "status": "available" }
+  ]
+}

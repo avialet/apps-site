@@ -1,4 +1,4 @@
-# Déploiement de app.vialet.app
+# Déploiement de vialet.app
 
 Site statique (`site/public`), synchronisé sur le serveur par `rsync` via SSH à chaque
 push sur `main` (`.github/workflows/deploy.yml`).
@@ -15,9 +15,11 @@ push sur `main` (`.github/workflows/deploy.yml`).
 
 ## Côté serveur
 
-- DNS : enregistrements `A` et `AAAA` pour `app.vialet.app`.
+- DNS : enregistrements `A` et `AAAA` pour `vialet.app` (`@`), `www` et `app`.
 - Dossier `/var/www/hub/site/public`, propriété de l'utilisateur de déploiement.
-- Bloc nginx dédié `app.vialet.app` (certificat wildcard `*.vialet.app` déjà présent).
+- Bloc nginx dédié `vialet.app` (racine, `www` redirigé) et bloc `app.vialet.app` réduit à une redirection
+  permanente vers `https://vialet.app/` : les deux sont posés par `scripts/serveur-racine.sh` du dépôt vialetapps
+  (certificat wildcard `*.vialet.app` déjà présent).
 - Clé publique dans `authorized_keys` de l'utilisateur, avec
   `restrict,command="/usr/bin/rrsync /var/www/hub/site/public"` : la clé ne donne aucun shell
   et ne peut écrire que dans ce dossier.
