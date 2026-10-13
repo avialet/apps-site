@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Pico",
+    "url": "https://pico.vialet.app",
+    "tagline": "Le gestionnaire de tâches natif pour Mac qui comprend vos phrases.",
+    "icon": "/img/pico.png",
+    "platform": "macOS 26",
+    "status": "available",
+    "color": "#F0A020"
+  }
+]

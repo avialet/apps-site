@@ -1,0 +1,60 @@
+/* Hub des apps : même direction « Calanque » que Pico. */
+:root {
+  --paper: #F7F3EC; --card: #FFFDF9; --ink: #1E2227; --ink-soft: #6A6E75; --ink-faint: #AFB2B7; --line: #E3DACB;
+  --sun: #F0A020; --coral: #EC6A5C; --lav: #8B78E6; --pine: #2E9D6E;
+  --serif: ui-serif, "New York", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --shadow: 0 24px 60px -28px rgba(40, 30, 10, .35), 0 6px 18px -10px rgba(40, 30, 10, .18);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #14161B; --card: #21252D; --ink: #EDE9E2; --ink-soft: #9CA2AA; --ink-faint: #5B616A; --line: #2D313A;
+    --shadow: 0 24px 60px -28px rgba(0,0,0,.8), 0 6px 18px -10px rgba(0,0,0,.6); }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(800px 480px at 90% -60px, color-mix(in srgb, var(--sun) 22%, transparent), transparent 70%),
+    radial-gradient(640px 440px at -10% 60%, color-mix(in srgb, #2F6FEB 10%, transparent), transparent 70%);
+  background-repeat: no-repeat;
+}
+a { color: inherit; }
+code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .86em; background: color-mix(in srgb, var(--ink) 7%, transparent); padding: .12em .45em; border-radius: 7px; }
+.top { max-width: 960px; width: 100%; margin: 0 auto; padding: 28px 24px 0; }
+.word { font-family: var(--serif); font-weight: 800; font-size: 26px; letter-spacing: -.03em; text-decoration: none; }
+.word i { font-style: normal; color: var(--sun); }
+main { max-width: 960px; width: 100%; margin: 0 auto; padding: 0 24px; flex: 1; }
+.intro { padding: 84px 0 48px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 800; color: var(--sun); margin: 0 0 18px; }
+h1, h2 { font-family: var(--serif); font-weight: 800; letter-spacing: -.02em; margin: 0; }
+h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.04; }
+.grad { background: linear-gradient(100deg, var(--sun), var(--coral) 55%, var(--lav)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { font-size: clamp(17px, 2vw, 21px); color: var(--ink-soft); max-width: 40ch; margin: 22px 0 0; }
+.catalog { display: grid; gap: 16px; }
+.app {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: center; text-decoration: none;
+  background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 22px 26px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.app:hover { transform: translateY(-3px); box-shadow: 0 22px 46px -26px var(--c); }
+.app img { border-radius: 16px; box-shadow: 0 10px 22px -10px var(--c); }
+.app h2 { font-family: var(--sans); font-size: 24px; letter-spacing: -.01em; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.app p { margin: 4px 0 8px; color: var(--ink-soft); font-size: 16px; }
+.meta { font-size: 13.5px; color: var(--ink-faint); font-weight: 600; }
+.badge { font: 800 11px var(--sans); text-transform: uppercase; letter-spacing: .08em; padding: 4px 10px; border-radius: 999px; }
+.badge.ok { color: var(--pine); background: color-mix(in srgb, var(--pine) 15%, transparent); }
+.badge.soon { color: var(--ink-soft); background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.go { font-size: 26px; color: var(--ink-faint); transition: transform .2s, color .2s; }
+.app:hover .go { transform: translateX(4px); color: var(--c); }
+.soon { color: var(--ink-soft); text-align: center; margin: 40px 0 0; font-size: 15.5px; }
+.foot { max-width: 960px; width: 100%; margin: 60px auto 0; padding: 28px 24px 40px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 14.5px; }
+.foot p { margin: 0; }
+@media (max-width: 560px) {
+  .intro { padding-top: 56px; }
+  .app { grid-template-columns: auto 1fr; padding: 18px; gap: 16px; }
+  .go { display: none; }
+  .app img { width: 52px; height: 52px; }
+}
+@media (prefers-reduced-motion: reduce) { .app, .go { transition: none; } }
