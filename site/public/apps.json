@@ -2,7 +2,8 @@
   {
     "name": "Pico",
     "url": "https://pico.vialet.app",
-    "tagline": "Le gestionnaire de tâches natif pour Mac qui comprend vos phrases.",
+    "tagline": "Le gestionnaire de tâches qui comprend vos phrases.",
+    "category": "Productivité",
     "icon": "/img/pico.png",
     "platform": "macOS 26",
     "status": "available",

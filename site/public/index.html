@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Les apps de Vialet</title>
-  <meta name="description" content="Des apps natives pour Mac, faites avec soin. Chaque app a sa page sur [nom].vialet.app.">
-  <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#14161B" media="(prefers-color-scheme: dark)">
+  <title>vialet.app, des apps pour Mac</title>
+  <meta name="description" content="Des apps natives pour Mac, sobres et soignées. Chaque app a sa page sur nom.vialet.app.">
+  <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="canonical" href="https://app.vialet.app/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Les apps de Vialet">
-  <meta property="og:description" content="Des apps natives pour Mac, faites avec soin.">
+  <meta property="og:title" content="vialet.app, des apps pour Mac">
+  <meta property="og:description" content="Des apps natives pour Mac, sobres et soignées.">
   <meta property="og:url" content="https://app.vialet.app/">
   <meta property="og:image" content="https://app.vialet.app/img/pico.png">
   <meta property="og:locale" content="fr_FR">
@@ -20,35 +20,40 @@
   <script src="/app.js" defer></script>
 </head>
 <body>
-  <header class="top">
-    <a class="word" href="/">vialet<i>.</i>app</a>
+  <header class="bar">
+    <a class="word" href="/"><span class="mark" aria-hidden="true"></span>vialet.app</a>
+    <p class="count" id="count">1 app</p>
   </header>
 
   <main>
     <section class="intro">
-      <p class="eyebrow">Apps pour Mac</p>
-      <h1>Des apps natives,<br><span class="grad">faites avec soin.</span></h1>
-      <p class="lead">Chaque app résout un problème précis, reste légère, et garde vos données chez vous. Chacune vit sur sa propre page, à l'adresse <code>nom.vialet.app</code>.</p>
+      <h1>Des apps pour Mac,<br>sobres et soignées.</h1>
+      <p class="lead">Chacune fait une chose, la fait bien, et garde vos données chez vous. Chaque app vit à sa propre adresse : <code>nom.vialet.app</code>.</p>
     </section>
 
-    <section class="catalog" aria-label="Catalogue" id="catalog">
-      <!-- Version sans JavaScript ; app.js la remplace par le contenu de apps.json. -->
-      <a class="app" href="https://pico.vialet.app" style="--c:#F0A020">
-        <img src="/img/pico.png" width="64" height="64" alt="">
-        <div>
-          <h2>Pico <span class="badge ok">Disponible</span></h2>
-          <p>Le gestionnaire de tâches natif pour Mac qui comprend vos phrases.</p>
-          <span class="meta">macOS 26 · Gratuit</span>
-        </div>
-        <span class="go" aria-hidden="true">→</span>
-      </a>
-    </section>
+    <nav class="filters" id="filters" aria-label="Catégories" hidden></nav>
 
-    <p class="soon">D'autres apps arrivent. Elles apparaîtront ici dès leur sortie.</p>
+    <section class="index" aria-label="Catalogue">
+      <div class="head" aria-hidden="true">
+        <span>N°</span><span>App</span><span>Catégorie</span><span>État</span><span></span>
+      </div>
+      <div id="list">
+        <!-- Version sans JavaScript ; app.js la remplace par le contenu de apps.json. -->
+        <a class="row" href="https://pico.vialet.app" style="--c:#F0A020">
+          <span class="num">01</span>
+          <span class="who"><img src="/img/pico.png" width="48" height="48" alt=""><span><b>Pico</b><small>Le gestionnaire de tâches qui comprend vos phrases.</small></span></span>
+          <span class="cat">Productivité</span>
+          <span class="state"><i class="dot"></i>Disponible</span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="foot">
-    <p>© 2026 Aurélien Vialet · <a href="https://github.com/avialet" rel="noopener">GitHub</a> · Aucun cookie, aucun traceur.</p>
+    <span>© 2026 Aurélien Vialet</span>
+    <span>Aucun cookie, aucun traceur</span>
+    <a href="https://github.com/avialet" rel="noopener">GitHub</a>
   </footer>
 </body>
 </html>

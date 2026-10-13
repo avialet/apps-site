@@ -1,6 +1,6 @@
 # app.vialet.app
 
-Le catalogue des apps natives pour Mac. Chaque app a sa propre page sur `nom.vialet.app` ;
+Le catalogue des apps natives pour Mac, sous forme d'index typographique sobre (volontairement distinct de l'identité de chaque app, qui apporte sa propre couleur). Chaque app a sa propre page sur `nom.vialet.app` ;
 cette page les liste. Une page statique, sans framework, sans cookie, sans traceur.
 
 - `site/public/apps.json` : la liste des apps (nom, adresse, accroche, icône, statut)

@@ -8,6 +8,7 @@
      "name": "Nom",
      "url": "https://nom.vialet.app",
      "tagline": "Une phrase qui dit ce que fait l'app.",
+     "category": "Productivité",
      "icon": "/img/nom.png",
      "platform": "macOS 26",
      "status": "available",
@@ -15,9 +16,10 @@
    }
    ```
 
+   `category` alimente les filtres de la page (ils apparaissent dès qu'il y a au moins deux catégories).
    `status` vaut `available` (carte cliquable) ou `soon` (carte grisée, sans lien).
    `url` doit être en `https://*.vialet.app` : le script ignore toute autre adresse.
-3. Mettre à jour la version sans JavaScript dans `site/public/index.html` si l'app est la première de la liste.
+3. Facultatif : la ligne statique de `site/public/index.html` (visible sans JavaScript) ne décrit que la première app.
 4. Commit et push sur `main` : le site est déployé automatiquement.
 
 La page de l'app elle-même (`nom.vialet.app`) est un dépôt à part, sur le modèle de
