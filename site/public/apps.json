@@ -8,5 +8,15 @@
     "platform": "macOS 26",
     "status": "available",
     "color": "#F0A020"
+  },
+  {
+    "name": "Allège",
+    "url": "https://allege.vialet.app",
+    "tagline": "Allège vos images sans les envoyer nulle part.",
+    "category": "Images",
+    "icon": "/img/allege.png",
+    "platform": "macOS 26",
+    "status": "available",
+    "color": "#2E9D6E"
   }
 ]
