@@ -28,5 +28,15 @@
     "platform": "macOS 26",
     "status": "available",
     "color": "#2F6FEB"
+  },
+  {
+    "name": "Brouillon",
+    "url": "https://brouillon.vialet.app",
+    "tagline": "Le bloc-notes qui comprend ce que vous y collez.",
+    "category": "Texte",
+    "icon": "/img/brouillon.png",
+    "platform": "macOS 26",
+    "status": "available",
+    "color": "#8B78E6"
   }
 ]
