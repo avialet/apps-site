@@ -3,6 +3,7 @@
     { "name": "Pico", "brand": "Pico", "url": "https://pico.vialet.app", "tagline": "Le gestionnaire de tâches qui comprend vos phrases.", "status": "available" },
     { "name": "Allège", "brand": "Allege", "url": "https://allege.vialet.app", "tagline": "Allège vos images sans les envoyer nulle part.", "status": "available" },
     { "name": "Pince", "brand": "Pince", "url": "https://pince.vialet.app", "tagline": "Gardez plusieurs copies sous la main.", "status": "available" },
-    { "name": "Brouillon", "brand": "Brouillon", "url": "https://brouillon.vialet.app", "tagline": "Le bloc-notes qui comprend ce que vous y collez.", "status": "available" }
+    { "name": "Brouillon", "brand": "Brouillon", "url": "https://brouillon.vialet.app", "tagline": "Le bloc-notes qui comprend ce que vous y collez.", "status": "available" },
+    { "name": "Chuchote", "brand": "Chuchote", "url": "https://chuchote.vialet.app", "tagline": "Parlez, c'est écrit là où est le curseur.", "status": "available" }
   ]
 }

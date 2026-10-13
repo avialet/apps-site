@@ -177,6 +177,7 @@ code {
 .question:first-of-type { margin-top: 40px; }
 .question summary { cursor: pointer; padding: 13px 0; font-weight: 600; }
 .question div { padding: 0 0 14px; color: var(--ink-soft); font-size: 16px; }
+.question div code { white-space: normal; overflow-wrap: anywhere; }
 
 /* Duo : confidentialite et code source, deux colonnes. */
 .duo {
