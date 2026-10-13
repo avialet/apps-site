@@ -18,5 +18,15 @@
     "platform": "macOS 26",
     "status": "available",
     "color": "#2E9D6E"
+  },
+  {
+    "name": "Pince",
+    "url": "https://pince.vialet.app",
+    "tagline": "Gardez plusieurs copies sous la main.",
+    "category": "Productivité",
+    "icon": "/img/pince.png",
+    "platform": "macOS 26",
+    "status": "available",
+    "color": "#2F6FEB"
   }
 ]
