@@ -1,6 +1,6 @@
 name: Deploy
 
-# Déploie site/public (app.vialet.app) sur le serveur à chaque push sur main.
+# Déploie site/public (vialet.app) sur le serveur à chaque push sur main.
 # Désactivé tant que la variable de dépôt DEPLOY_ENABLED n'est pas "true"
 # (Settings > Secrets and variables > Actions > Variables). Voir docs/deploiement.md.
 on:
@@ -40,4 +40,4 @@ jobs:
             site/public/ "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/"
 
       - name: Vérifier la mise en ligne
-        run: curl --fail --silent --show-error --head https://app.vialet.app/ | head -1
+        run: curl --fail --silent --show-error --head https://vialet.app/ | head -1
