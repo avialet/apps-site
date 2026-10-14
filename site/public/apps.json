@@ -1,9 +1,13 @@
 {
   "apps": [
-    { "name": "Pico", "brand": "Pico", "url": "https://pico.vialet.app", "tagline": "Le gestionnaire de tâches qui comprend vos phrases.", "status": "available" },
-    { "name": "Allège", "brand": "Allege", "url": "https://allege.vialet.app", "tagline": "Allège vos images sans les envoyer nulle part.", "status": "available" },
-    { "name": "Pince", "brand": "Pince", "url": "https://pince.vialet.app", "tagline": "Gardez plusieurs copies sous la main.", "status": "available" },
-    { "name": "Brouillon", "brand": "Brouillon", "url": "https://brouillon.vialet.app", "tagline": "Le bloc-notes qui comprend ce que vous y collez.", "status": "available" },
-    { "name": "Chuchote", "brand": "Chuchote", "url": "https://chuchote.vialet.app", "tagline": "Parlez, c'est écrit là où est le curseur.", "status": "available" }
+    {"name": "Pico", "brand": "Pico", "url": "https://pico.vialet.app", "tagline": "Le gestionnaire de tâches qui comprend vos phrases.", "status": "available"},
+    {"name": "Allège", "brand": "Allege", "url": "https://allege.vialet.app", "tagline": "Allège vos images sans les envoyer nulle part.", "status": "available"},
+    {"name": "Pince", "brand": "Pince", "url": "https://pince.vialet.app", "tagline": "Gardez plusieurs copies sous la main.", "status": "available"},
+    {"name": "Brouillon", "brand": "Brouillon", "url": "https://brouillon.vialet.app", "tagline": "Le bloc-notes qui comprend ce que vous y collez.", "status": "available"},
+    {"name": "Chuchote", "brand": "Chuchote", "url": "https://chuchote.vialet.app", "tagline": "Parlez, c'est écrit là où est le curseur.", "status": "available"},
+    {"name": "Range", "brand": "Range", "url": "https://range.vialet.app", "tagline": "Les téléchargements se rangent tout seuls.", "status": "available"},
+    {"name": "Lanterne", "brand": "Lanterne", "url": "https://lanterne.vialet.app", "tagline": "Un lanceur qui apprend vos habitudes et dit pourquoi.", "status": "available"},
+    {"name": "Rideau", "brand": "Rideau", "url": "https://rideau.vialet.app", "tagline": "Le désordre passe en coulisses.", "status": "available"},
+    {"name": "Éveil", "brand": "Eveil", "url": "https://eveil.vialet.app", "tagline": "Le Mac reste éveillé, le temps qu'il faut.", "status": "available"}
   ]
 }
