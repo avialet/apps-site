@@ -22,6 +22,20 @@
   <link rel="preload" href="/vialet/fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/vialet/vialet.css?v=75c684ea">
   <link rel="stylesheet" href="/hub.css?v=71e1b3f5">
+  <!-- Mesure d'audience : Matomo auto-heberge, sans cookie, IP anonymisees. -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u = 'https://matomo.welcome-to-the-lab.com/';
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '4']);
+      var d = document, g = d.createElement('script');
+      g.async = true; g.src = u + 'matomo.js'; d.head.appendChild(g);
+    })();
+  </script>
 </head>
 <body data-hub style="--plaque-hub:conic-gradient(#F0A020 0 11.11%, #2E9D6E 0 22.22%, #2F6FEB 0 33.33%, #8B78E6 0 44.44%, #D9486B 0 55.56%, #B26B2E 0 66.67%, #E0601F 0 77.78%, #B84BAA 0 88.89%, #12A3B0 0)">
 <header class="hub-tete">
@@ -162,7 +176,7 @@
 </main>
 
 <footer class="pied">
-  <p class="pied-texte">Chaque app vit sur son propre site, avec son code et ses versions sur GitHub. Les sites ne posent aucun cookie et ne mesurent rien.</p>
+  <p class="pied-texte">Chaque app vit sur son propre site, avec son code et ses versions sur GitHub. Les sites ne posent aucun cookie. vialet.app compte ses visites avec Matomo, hébergé sur notre serveur, sans cookie et avec les adresses IP anonymisées. Les apps, elles, n’envoient rien.</p>
   <ul>
     <li><a href="https://github.com/avialet" rel="noopener">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/aurelien-vialet-a9834b/" rel="noopener">LinkedIn</a></li>
